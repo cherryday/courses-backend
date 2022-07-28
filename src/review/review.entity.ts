@@ -23,9 +23,9 @@ export class ReviewEntity {
   @Column()
   rating: number;
 
-  // @CreateDateColumn()
-  // createdAt: Date;
+  @CreateDateColumn({ name: 'created_at' })
+  createdAt: Date;
 
-  // @UpdateDateColumn()
-  // updatedAt: Date;
+  @UpdateDateColumn({ name: 'updated_at' })
+  updatedAt: Date;
 }
